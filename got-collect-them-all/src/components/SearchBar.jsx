@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import {FaSearch} from "react-icons/fa"
 import "./SearchBar.css"
-import cards from "../utils/pokemon-api"
+import cards from "../../utils/pokemon-api"
 
 export const SearchBar = () => {
     const [input, setInput] = useState("")
