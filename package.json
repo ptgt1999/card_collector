@@ -4,13 +4,16 @@
   "description": "A place to search for and list the cards you own",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "script": "concurrently --kill-others \"npm run dev\" \"npm run start\"",
+      "dev": "vite",
+      "start": "node ./api/bin/www"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
     "express": "^4.19.2",
     "mongoose": "^8.5.2"
   },
