@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "script": "concurrently --kill-others \"npm run dev\" \"npm run start\"",
-      "dev": "vite",
+      "dev": " cd got-collect-them-all && vite",
       "start": "node ./api/bin/www"
   },
   "keywords": [],
